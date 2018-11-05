@@ -1,0 +1,28 @@
+.status_act{
+    border-radius: 30px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    padding: 4px;
+}
+.status_inact{
+    border-radius: 30px;
+    color: #fff;
+    background-color: #d43f3a;
+    border-color: #d43f3a;
+    padding: 4px;
+}
+.status_pending{
+    border-radius: 30px;
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+    padding: 4px;
+}
+.smallpad{
+    padding: 3px 5px 3px 5px;
+}
+
+.newclass{
+    background: #2A3F54 !important;
+}

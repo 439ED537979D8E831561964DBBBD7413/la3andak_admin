@@ -1,0 +1,429 @@
+[15-Feb-2017 18:36:15 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ';' in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 448
+[15-Feb-2017 18:37:08 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ';' in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 448
+[15-Feb-2017 18:41:28 Asia/Calcutta] PHP Parse error:  syntax error, unexpected end of file in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 514
+[15-Feb-2017 18:44:42 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 524
+[21-Feb-2017 10:48:01 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '<' in /home/aditetech/public_html/Myst/application/front-modules/drivers/views/driver_list.php on line 63
+[21-Feb-2017 10:49:06 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '<' in /home/aditetech/public_html/Myst/application/front-modules/drivers/views/driver_list.php on line 63
+[21-Feb-2017 11:33:55 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '<' in /home/aditetech/public_html/Myst/application/front-modules/orders/views/view_order.php on line 144
+[21-Feb-2017 11:35:46 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '<' in /home/aditetech/public_html/Myst/application/front-modules/orders/views/view_order.php on line 148
+[21-Feb-2017 11:35:48 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '<' in /home/aditetech/public_html/Myst/application/front-modules/orders/views/view_order.php on line 148
+[21-Feb-2017 11:35:52 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '<' in /home/aditetech/public_html/Myst/application/front-modules/orders/views/view_order.php on line 148
+[22-Feb-2017 16:07:58 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 1069
+[22-Feb-2017 17:08:54 Asia/Calcutta] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 1066
+[22-Feb-2017 17:45:41 Asia/Calcutta] PHP Fatal error:  Call to a member function getData() on a non-object in /home/aditetech/public_html/Myst/application/front-modules/customers/controllers/customers.php on line 44
+[22-Feb-2017 17:49:10 Asia/Calcutta] PHP Fatal error:  Call to a member function getData() on a non-object in /home/aditetech/public_html/Myst/application/front-modules/customers/controllers/customers.php on line 44
+[22-Feb-2017 17:49:39 Asia/Calcutta] PHP Fatal error:  Call to a member function getData() on a non-object in /home/aditetech/public_html/Myst/application/front-modules/customers/controllers/customers.php on line 44
+[22-Feb-2017 17:50:49 Asia/Calcutta] PHP Fatal error:  Call to a member function getData() on a non-object in /home/aditetech/public_html/Myst/application/front-modules/customers/controllers/customers.php on line 44
+[22-Feb-2017 17:50:52 Asia/Calcutta] PHP Fatal error:  Call to a member function getData() on a non-object in /home/aditetech/public_html/Myst/application/front-modules/customers/controllers/customers.php on line 44
+[22-Feb-2017 17:50:53 Asia/Calcutta] PHP Fatal error:  Call to a member function getData() on a non-object in /home/aditetech/public_html/Myst/application/front-modules/customers/controllers/customers.php on line 44
+[23-Feb-2017 10:06:25 Asia/Calcutta] PHP Fatal error:  Call to a member function getData() on a non-object in /home/aditetech/public_html/Myst/application/front-modules/customers/controllers/customers.php on line 217
+[23-Feb-2017 11:12:44 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '.0' (T_DNUMBER) in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 608
+[23-Feb-2017 11:40:19 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '"isdelete"' (T_CONSTANT_ENCAPSED_STRING) in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 575
+[23-Feb-2017 11:42:27 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '"' in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 582
+[23-Feb-2017 11:48:34 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '"' in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 582
+[23-Feb-2017 11:48:35 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '"' in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 582
+[23-Feb-2017 11:48:40 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '=' in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 575
+[23-Feb-2017 11:48:41 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '=' in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 575
+[23-Feb-2017 11:48:42 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '=' in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 575
+[23-Feb-2017 11:48:42 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '=' in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 575
+[23-Feb-2017 11:48:42 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '=' in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 575
+[23-Feb-2017 11:48:42 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '=' in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 575
+[23-Feb-2017 11:48:43 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '=' in /home/aditetech/public_html/Myst/application/front-modules/orders/controllers/orders.php on line 575
+[24-Aug-2017 15:43:15 Asia/Beirut] PHP Parse error:  syntax error, unexpected '=' in /home/aditetech/public_html/grocery/application/front-modules/payment/views/payment_list.php on line 73
+[26-Aug-2017 07:17:40 Asia/Beirut] PHP Parse error:  syntax error, unexpected '.' in /home/aditetech/public_html/grocery/application/front-modules/order/views/cancel_order_list.php on line 109
+[26-Aug-2017 07:17:42 Asia/Beirut] PHP Parse error:  syntax error, unexpected '.' in /home/aditetech/public_html/grocery/application/front-modules/order/views/cancel_order_list.php on line 109
+[29-Aug-2017 13:21:22 Asia/Beirut] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/aditetech/public_html/grocery/application/front-modules/csv/controllers/csv.php on line 859
+[29-Aug-2017 13:28:23 Asia/Beirut] PHP Fatal error:  Call to a member function getData() on a non-object in /home/aditetech/public_html/grocery/application/front-modules/csv/controllers/csv.php on line 1058
+[31-Aug-2017 13:50:46 Asia/Beirut] PHP Parse error:  syntax error, unexpected ';' in /home/aditetech/public_html/grocery/application/front-modules/csv/controllers/csv.php on line 789
+[31-Aug-2017 13:51:54 Asia/Beirut] PHP Parse error:  syntax error, unexpected ';' in /home/aditetech/public_html/grocery/application/front-modules/csv/controllers/csv.php on line 789
+[31-Aug-2017 14:07:45 Asia/Beirut] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/aditetech/public_html/grocery/application/front-modules/csv/controllers/csv.php on line 498
+[31-Aug-2017 14:17:01 Asia/Beirut] PHP Parse error:  syntax error, unexpected '',category_english_name'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/aditetech/public_html/grocery/application/front-modules/csv/controllers/csv.php on line 788
+[01-Sep-2017 11:21:23 Asia/Beirut] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/aditetech/public_html/grocery/application/front-modules/csv/controllers/csv.php on line 599
+[01-Sep-2017 11:22:02 Asia/Beirut] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/aditetech/public_html/grocery/application/front-modules/csv/controllers/csv.php on line 606
+[01-Sep-2017 11:22:03 Asia/Beirut] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/aditetech/public_html/grocery/application/front-modules/csv/controllers/csv.php on line 606
+[01-Sep-2017 11:30:36 Asia/Beirut] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/aditetech/public_html/grocery/application/front-modules/csv/controllers/csv.php on line 791
+[01-Sep-2017 11:31:04 Asia/Beirut] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/aditetech/public_html/grocery/application/front-modules/csv/controllers/csv.php on line 791
+[01-Sep-2017 11:31:05 Asia/Beirut] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/aditetech/public_html/grocery/application/front-modules/csv/controllers/csv.php on line 791
+[01-Sep-2017 13:17:57 Asia/Beirut] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 5000 bytes) in /home/aditetech/public_html/grocery/system/libraries/Image_lib.php on line 1164
+[01-Sep-2017 13:18:58 Asia/Beirut] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 5000 bytes) in /home/aditetech/public_html/grocery/system/libraries/Image_lib.php on line 1164
+[01-Sep-2017 14:15:57 Asia/Beirut] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 23092 bytes) in /home/aditetech/public_html/grocery/system/libraries/Image_lib.php on line 1155
+[01-Sep-2017 14:16:04 Asia/Beirut] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 23092 bytes) in /home/aditetech/public_html/grocery/system/libraries/Image_lib.php on line 1155
+[02-Sep-2017 08:35:53 Asia/Beirut] PHP Parse error:  syntax error, unexpected ';' in /home/aditetech/public_html/grocery/application/front-modules/content/views/invoice_mail.php on line 283
+[13-Nov-2017 20:24:32 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[13-Nov-2017 20:24:34 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 07:27:37 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 07:27:40 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 07:27:43 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 07:28:22 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 299 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(299): Model_support->getData('content_managem...')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->content_management()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 07:28:22 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 299 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(299): Model_support->getData('content_managem...')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->content_management()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 07:28:24 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 299 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(299): Model_support->getData('content_managem...')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->content_management()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 07:32:44 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 07:32:49 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 299 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(299): Model_support->getData('content_managem...')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->content_management()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 07:32:59 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 363 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(363): Model_support->getData('contact_us')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->contact_us()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 07:33:30 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 07:37:45 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 07:40:47 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 07:40:53 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 08:12:32 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 08:16:09 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 08:16:13 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 08:16:41 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 08:18:52 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 08:18:55 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 08:19:44 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 08:20:03 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 08:20:05 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 08:20:40 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 08:20:46 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 08:21:34 Asia/Beirut] PHP Parse error:  syntax error, unexpected '/' in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291
+[18-Nov-2017 09:28:15 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 09:29:52 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 09:29:53 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 09:40:31 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 09:43:02 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 09:44:09 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 298 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(298): Model_support->getData('content_managem...')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->content_management()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 09:44:23 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 298 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(298): Model_support->getData('content_managem...')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->content_management()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 09:44:32 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 362 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(362): Model_support->getData('contact_us')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->contact_us()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 09:45:15 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 09:47:14 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 09:49:29 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:01:40 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:02:34 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:08:05 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:09:17 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:12:01 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:12:34 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:19:08 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:19:13 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:21:13 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:26:20 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:26:24 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:36:31 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:38:13 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:39:03 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:40:57 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:41:20 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:41:21 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:42:42 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:42:43 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:46:25 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:46:28 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 10:47:25 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 11:06:15 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 11:07:39 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 290 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(290): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 11:10:48 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 291 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(291): Model_support->getData('feedback')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->feedback_list()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 11:18:07 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 306 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(306): Model_support->getData('content_managem...')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->content_management()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 12:02:50 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 306 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(306): Model_support->getData('content_managem...')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->content_management()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
+[18-Nov-2017 12:03:38 Asia/Beirut] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Model_support::getData(), 1 passed in /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php on line 370 and at least 2 expected in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php:78
+Stack trace:
+#0 /home/la3andak/public_html/grocery/application/front-modules/content/controllers/content.php(370): Model_support->getData('contact_us')
+#1 /home/la3andak/public_html/grocery/system/core/CodeIgniter.php(359): Content->contact_us()
+#2 /home/la3andak/public_html/grocery/index.php(201): require_once('/home/la3andak/...')
+#3 {main}
+  thrown in /home/la3andak/public_html/grocery/application/front-modules/content/models/model_support.php on line 78
