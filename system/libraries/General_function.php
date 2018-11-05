@@ -103,6 +103,7 @@ Class CI_General_function
 				</div>';
 		return $html;
 	}
+        	
 
 
 	 public function showImage_profile($imageName,$imageWithPath,$id=0)
@@ -811,6 +812,19 @@ Class CI_General_function
     }
     return $text;
   }
+  
+   public function showBannerImage($imageName,$imageWithPath,$id=0)
+    {
+		$html = '<div class="form-group">
+					<label class="control-label col-md-3">&nbsp;</label>
+						<div class="profile-userpic  col-md-2">
+							<input type="hidden" name="old_img" id="old_img" value="'.$imageName.'" >
+							<img alt="" class="img-responsive" src="'.$imageWithPath.'">
+						</div>
+						<button class="btn btn-danger remove_banner_image" id="'.$id.'" type="button">Remove Image</button>
+				</div>';
+		return $html;
+	}
 
 }
 
