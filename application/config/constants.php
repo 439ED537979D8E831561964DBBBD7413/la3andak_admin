@@ -63,3 +63,6 @@ define('ORDER_CODE_PREFIX','LA3');
 define('CURRENCY_CONSTANT','LBP');
 define('NUMBER_CONSTANT','+961 76 797 226');
 define('EMAIL_CONSTANT','support@la3andak.com');
+
+define('CAT_BANNER_IMG_MAX_WIDTH','650');
+define('CAT_BANNER_IMG_MAX_HEIGHT','100'); // 2MB

@@ -53,6 +53,21 @@
                             </div>
 
                         </div>
+                        <div class="form-group">
+
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Category Banner
+
+                            </label>
+
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+
+                                <!-- <input id="icon" name="icon" class="required form-control col-md-7 col-xs-12" type="file" > -->
+
+                                <input type="file" name="banner_image[]" multiple="multiple" accept="image/*" id="image"  class="form-control col-md-7 col-xs-12"/>
+
+                            </div>
+
+                        </div>
 
 
 

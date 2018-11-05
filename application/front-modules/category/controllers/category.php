@@ -65,7 +65,8 @@ class category extends MX_Controller {
     public function category_action()
 
     {
-
+        
+        
         $postvar = $this->input->post();
 
         $val['category_english_name'] = $postvar['category_name'];
@@ -145,12 +146,88 @@ class category extends MX_Controller {
 
 
                             }
+                            if ($_FILES['banner_image']['tmp_name'] != "")
+
+                            {
+
+                                foreach ($_FILES['banner_image']['name'] as $f => $name) {
+
+                                    if ($_FILES['banner_image']['error'][$f] == 4) {
+
+                                        continue;
+
+                                    }
+
+
+
+                                    $name1=strtotime(date('Y-m-d H:i')).$name;
+
+                                    $file_name = trim(basename(stripslashes($name1)), ".\x00..\x20");
+
+                                    $file_name_array = explode('.',$file_name);
+
+                                    $name_thumb =$file_name_array[0]."_thumb.".$file_name_array[1];
+
+                                    $name1="banner_".strtotime(date('Y-m-d H:i')).$name;
+
+                                    if(move_uploaded_file($_FILES["banner_image"]["tmp_name"][$f],TABLE_CATEGORY_UPLOAD.$name1)) {
+
+
+
+                                        $val['category_banner_img'] = "banner_".$name_thumb;
+
+                                        $config['image_library'] = 'gd2';
+
+                                        $config['source_image'] = TABLE_CATEGORY_UPLOAD.$name1;
+
+                                        $config['create_thumb'] = TRUE;
+
+                                        $config['maintain_ratio'] = TRUE;
+
+                                        $config['width']     = CAT_BANNER_IMG_MAX_WIDTH;
+
+                                        $config['height']   = CAT_BANNER_IMG_MAX_HEIGHT;
+
+                                        $this->image_lib->clear();
+
+                                        $this->image_lib->initialize($config);
+
+                                        $this->image_lib->resize();
+
+                                    }
+
+                                    else{
+
+
+
+                                        $this->session->set_flashdata('error', 'Unable to Upload Banner Image');
+
+
+
+                                        $this->session->set_userdata($session_data);
+
+                                    }
+
+
+
+                                }
+
+
+
+                            }
 
                              if($_FILES['image']['type'][0] == "")
 
                             {
 
                                 $val['category_icon'] = "no_image.png";
+
+                            }
+                             if($_FILES['banner_image']['type'][0] == "")
+
+                            {
+
+                                $val['category_banner_img'] = "";
 
                             }
 
@@ -261,6 +338,84 @@ class category extends MX_Controller {
 
 
                             }
+                            
+                            else
+
+                            {
+
+                                $val['category_icon'] = "no_image.jpg";
+
+                            }
+
+                                if ($_FILES['banner_image']['tmp_name'] != "")
+
+                            {
+
+                                foreach ($_FILES['banner_image']['name'] as $f => $name) {
+
+                                    if ($_FILES['banner_image']['error'][$f] == 4) {
+
+                                        continue;
+
+                                    }
+
+
+
+                                    $name1=strtotime(date('Y-m-d H:i')).$name;
+
+                                    $file_name = trim(basename(stripslashes($name1)), ".\x00..\x20");
+
+                                    $file_name_array = explode('.',$file_name);
+
+                                    $name_thumb =$file_name_array[0]."_thumb.".$file_name_array[1];
+
+                                    $name1="banner_".strtotime(date('Y-m-d H:i')).$name;
+
+                                    if(move_uploaded_file($_FILES["banner_image"]["tmp_name"][$f],TABLE_CATEGORY_UPLOAD.$name1)) {
+
+
+
+                                        $val['category_banner_img'] = "banner_".$name_thumb;
+
+                                        $config['image_library'] = 'gd2';
+
+                                        $config['source_image'] = TABLE_CATEGORY_UPLOAD.$name1;
+
+                                        $config['create_thumb'] = TRUE;
+
+                                        $config['maintain_ratio'] = TRUE;
+
+                                        $config['width']     = IMG_MAX_WIDTH;
+
+                                        $config['height']   = IMG_MAX_HEIGHT;
+
+                                        $this->image_lib->clear();
+
+                                        $this->image_lib->initialize($config);
+
+                                        $this->image_lib->resize();
+
+                                    }
+
+                                    else{
+
+
+
+                                        $this->session->set_flashdata('error', 'Unable to Upload Category Banner Image');
+
+
+
+                                        $this->session->set_userdata($session_data);
+
+                                    }
+
+
+
+                                }
+
+
+
+                            }
 
 
 
@@ -268,7 +423,7 @@ class category extends MX_Controller {
 
                             {
 
-                                $val['category_icon'] = "no_image.jpg";
+                                $val['category_banner_img'] = "no_image.jpg";
 
                             }
 
@@ -345,10 +500,15 @@ class category extends MX_Controller {
 
 
            $id = $this->input->post('id');
+           $type = $this->input->post('type');
 
            if ($id > 0) {
-
-                 $update['category_icon'] = "no_image.png";
+               if($type == "category_banner"){
+                     $update['category_banner_img'] = "";
+               }else{
+                     $update['category_icon'] = "no_image.png";
+               }
+               
 
                 $this->model_category->update("category", $update, "category_id=" . $id);
 

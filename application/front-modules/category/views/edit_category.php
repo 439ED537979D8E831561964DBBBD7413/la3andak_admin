@@ -50,6 +50,29 @@
                                     ?>
                             </div>
                         </div>
+                              <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Category Banner<span class="">*</span>
+                            </label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <!-- <input id="icon" name="icon" class="required form-control col-md-7 col-xs-12" type="file" > -->
+                                <input type="file" name="banner_image[]" multiple="multiple" accept="image/*" id="image"  class="form-control col-md-7 col-xs-12"/>
+                           </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 15px">
+                                 <?php
+                                if($category[0]['category_banner_img']!="")
+                                {
+                                    if($category[0]['category_banner_img'] !="" && $category[0]['category_banner_img'] != "NULL")
+                                    {
+
+                                        $imageWithPath = base_url().TABLE_CATEGORY_UPLOAD.$category[0]['category_banner_img'];
+                                        $imageHTML = $this->general_function->showBannerImage($category[0]['category_banner_img'],$imageWithPath,$category[0]['category_id']);
+                                        echo $imageHTML;
+                                    }
+
+                                } 
+                                    ?>
+                            </div>
+                        </div>
                        
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Status<span class="required">*</span>
@@ -105,6 +128,44 @@
           url : '<?php echo base_url(); ?>category/removeImage',
 
           data: {'id' : id},
+
+          success: function(data){
+
+            $('#AjaxLoaderDiv').fadeOut('fast');
+
+            location.reload();
+
+          },
+
+          error: function (e){
+
+            alert (e)
+
+          }
+
+        })
+
+    }
+
+})
+    $(".remove_banner_image").click(function(){
+
+ id=this.id;
+
+
+    if(confirm("Are you sure? You want to delete this image?"))
+
+    {
+
+        $('#AjaxLoaderDiv').fadeIn('slow');
+
+        $.ajax({
+
+          type: 'post',
+
+          url : '<?php echo base_url(); ?>category/removeImage',
+
+          data: {'id' : id, 'type':'category_banner'},
 
           success: function(data){
 
