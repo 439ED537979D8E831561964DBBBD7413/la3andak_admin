@@ -197,44 +197,33 @@ class product extends MX_Controller {
     public function product_action() {
 
         $postvar = $this->input->post();
-
         $val['product_english_name'] = $postvar['product_name'];
-
         $val['product_brand_id'] = $postvar['brand_id'];
-
         $val['product_category'] = $postvar['category_id'];
-
         $val['product_bunch'] = $postvar['sub_category_id'];
-
         $val['unit_type'] = $postvar['unit_type'];
-
         $val['unit_value'] = $postvar['unit_value'];
-
         $val['product_description'] = ($postvar['desc']);
-
         $val['mrp'] = $postvar['mrp'];
-
         $val['discount_percentage'] = $postvar['discount_per'];
-
         $val['quantity'] = $postvar['quantity'];
-
         $val['max_sale_qty'] = $postvar['max_product'];
-
         $val['product_status'] = $postvar['status'];
-        $val['offer_end_date'] = $postvar['offer_end_date'];
-        $val['offer_start_date'] = $postvar['offer_start_date'];
+
+        if (isset($postvar['offer_end_date']) && $postvar['offer_end_date'] != "") {
+            $val['offer_end_date'] = date("Y-m-d", strtotime($postvar['offer_end_date']));
+        } else {
+            $val['offer_end_date'] = "";
+        }
+
+        if (isset($postvar['offer_start_date']) && $postvar['offer_start_date'] != "") {
+            $val['offer_start_date'] = date("Y-m-d", strtotime($postvar['offer_start_date']));
+        } else {
+            $val['offer_start_date'] = "";
+        }
 
         $val['subproduct_id'] = 0;
-
         $val['discounted_price'] = floatval($postvar['mrp']) - ((floatval($postvar['discount_per'] * floatval($postvar['mrp'])) / 100));
-
-
-
-        // $val['product_description'] =$this->clean($val['product_description']);
-
-
-
-
 
         if ($_FILES['image']['tmp_name'] != "") {
 
@@ -346,8 +335,17 @@ class product extends MX_Controller {
         $val['max_sale_qty'] = $postvar['max_product'];
 
         $val['product_status'] = $postvar['status'];
-        $val['offer_end_date'] = $postvar['offer_end_date'];
-        $val['offer_start_date'] = $postvar['offer_start_date'];
+        if (isset($postvar['offer_end_date']) && $postvar['offer_end_date'] != "") {
+            $val['offer_end_date'] = date("Y-m-d", strtotime($postvar['offer_end_date']));
+        } else {
+            $val['offer_end_date'] = "";
+        }
+
+        if (isset($postvar['offer_start_date']) && $postvar['offer_start_date'] != "") {
+            $val['offer_start_date'] = date("Y-m-d", strtotime($postvar['offer_start_date']));
+        } else {
+            $val['offer_start_date'] = "";
+        }
 
         $val['subproduct_id'] = 0;
 
@@ -950,48 +948,48 @@ class product extends MX_Controller {
 
                 <i class="fa"></i>
 
-        <?php
-        if (count($sub_cat) > 0) {
+                <?php
+                if (count($sub_cat) > 0) {
 
-            // Fetch product type IDS from DB..............................
+                    // Fetch product type IDS from DB..............................
 
-            $can_perform_array = array();
-            ?>
+                    $can_perform_array = array();
+                    ?>
 
                     <select name="sub_category_id" id="sub_category_id" class="form-control" style="margin-top:-12px;">
 
                         <!-- <option value="0">Select Category</option> -->
 
-            <?php
-            foreach ($sub_cat as $row) {
+                        <?php
+                        foreach ($sub_cat as $row) {
 
-                $product_bunch_id = $row['product_bunch_id'];
+                            $product_bunch_id = $row['product_bunch_id'];
 
-                $productbunch_english_name = $row['productbunch_english_name'];
+                            $productbunch_english_name = $row['productbunch_english_name'];
 
-                $category_id = $row['category_id'];
+                            $category_id = $row['category_id'];
 
-                $selected = '';
+                            $selected = '';
 
-                if (isset($can_perform_array) && count($can_perform_array) > 0) {
+                            if (isset($can_perform_array) && count($can_perform_array) > 0) {
 
-                    if (in_array($product_bunch_id, $can_perform_array)) {
+                                if (in_array($product_bunch_id, $can_perform_array)) {
 
-                        $selected = 'selected=selected';
-                    }
-                } else {
+                                    $selected = 'selected=selected';
+                                }
+                            } else {
 
-                    $selected = '';
-                }
-                ?>
+                                $selected = '';
+                            }
+                            ?>
 
                             <option <?php echo $selected; ?> data-cat="<?php echo $category_id; ?>"value="<?php echo $product_bunch_id; ?>"><?Php echo $productbunch_english_name; ?></option>
 
-            <?php } ?>
+                        <?php } ?>
 
                     </select>
 
-        <?php } ?>
+                <?php } ?>
 
             </div>
 
