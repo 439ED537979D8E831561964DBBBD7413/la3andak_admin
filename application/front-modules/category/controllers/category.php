@@ -174,7 +174,7 @@ class category extends MX_Controller {
 
 
 
-                                        $val['category_banner_img'] = "banner_".$name_thumb;
+                                        $val['category_banner_img'] = $name1;
 
                                         $config['image_library'] = 'gd2';
 
@@ -375,7 +375,7 @@ class category extends MX_Controller {
 
 
 
-                                        $val['category_banner_img'] = "banner_".$name_thumb;
+                                        $val['category_banner_img'] = $name1;
 
                                         $config['image_library'] = 'gd2';
 
@@ -385,9 +385,9 @@ class category extends MX_Controller {
 
                                         $config['maintain_ratio'] = TRUE;
 
-                                        $config['width']     = IMG_MAX_WIDTH;
+                                        $config['width']     = CAT_BANNER_IMG_MAX_WIDTH;
 
-                                        $config['height']   = IMG_MAX_HEIGHT;
+                                        $config['height']   = CAT_BANNER_IMG_MAX_HEIGHT;
 
                                         $this->image_lib->clear();
 
