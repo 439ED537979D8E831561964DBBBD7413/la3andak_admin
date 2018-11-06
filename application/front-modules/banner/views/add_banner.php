@@ -26,7 +26,7 @@
                             <div class="col-md-9 col-sm-9 col-xs-12">
 
                                 <input type="file" name="image[]" multiple="multiple" accept="image/*" id="image"  class="form-control col-md-7 col-xs-12"/>
-                                    <b> For Better Resolution Fix Upload Promocode Image Size to 1900 ×700 </b>
+                                    <b> For Better Resolution Fix Upload Promocode Image Size to 1900 ×420 </b>
                             </div>
                         </div>
 
