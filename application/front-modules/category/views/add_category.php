@@ -64,6 +64,7 @@
                                 <!-- <input id="icon" name="icon" class="required form-control col-md-7 col-xs-12" type="file" > -->
 
                                 <input type="file" name="banner_image[]" multiple="multiple" accept="image/*" id="image"  class="form-control col-md-7 col-xs-12"/>
+                                <p>For better resolution upload image of 660 ×100 size</p>
 
                             </div>
 
