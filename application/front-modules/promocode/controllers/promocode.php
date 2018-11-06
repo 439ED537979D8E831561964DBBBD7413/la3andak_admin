@@ -20,9 +20,7 @@ class promocode extends MX_Controller {
         $cond = "bIsdelete = 0";
         $order_by = "promocode_id desc";
         $promocode = $this->model_promocode->getData("promocodes", $fields, $cond, $join, $order_by);
-
         $data['promocode'] = $promocode;
-
         $this->load->view("promocode_list", $data);
     }
 
@@ -44,18 +42,13 @@ class promocode extends MX_Controller {
         $data['sub_category'] = $sub_category;
         $data['product'] = $product;
 
-
-
         $this->load->view("add_promocode", $data);
     }
 
     public function promocode_action() {
         $postvar = $this->input->post();
-
         if ($postvar['main_type'] == 'Category') {
-
             $string = implode(',', $postvar['category_main']);
-
             if ($string == NULL) {
                 echo '<script type="text/javascript">';
                 echo 'alert("Please Select Category");';
@@ -107,22 +100,51 @@ class promocode extends MX_Controller {
         }
 
 
-        $name1 = "";
+//        $name1 = "";
+//        if ($_FILES['image']['tmp_name'] != "") {
+//            foreach ($_FILES['image']['name'] as $f => $name) {
+//                if ($_FILES['image']['error'][$f] == 4) {
+//                    continue;
+//                }
+//
+//                $name1 = time();
+//                $file_name = trim(basename(stripslashes($name1)), ".\x00..\x20");
+//                $file_name_array = explode('.', $file_name);
+//                $name_thumb = $file_name_array[0] . "_thumb." . $file_name_array[1];
+//                $name1 = strtotime(date('Y-m-d H:i')) . $name1;
+//                if (move_uploaded_file($_FILES["image"]["tmp_name"][$f], TABLE_PROMOCODE_UPLOAD . $name1)) {
+//                    $image_promo = $name_thumb;
+//                    $config['image_library'] = 'gd2';
+//                    $config['source_image'] = TABLE_PROMOCODE_UPLOAD . $name1;
+//                    $config['create_thumb'] = TRUE;
+//                    $config['maintain_ratio'] = TRUE;
+//                    $config['width'] = IMG_MAX_WIDTH;
+//                    $config['height'] = IMG_MAX_HEIGHT;
+//                    $this->image_lib->clear();
+//                    $this->image_lib->initialize($config);
+//                    $this->image_lib->resize();
+//                } else {
+//                    $this->session->set_flashdata('error', 'Unable to Upload Image');
+//                    $this->session->set_userdata($session_data);
+//                }
+//            }
+//        }
+//        
+        $name1 = $promocode_image = "";
+
         if ($_FILES['image']['tmp_name'] != "") {
             foreach ($_FILES['image']['name'] as $f => $name) {
                 if ($_FILES['image']['error'][$f] == 4) {
                     continue;
                 }
 
-                $name1 = time();
+                $name1 = strtotime(date('Y-m-d H:i')) . $name;
                 $file_name = trim(basename(stripslashes($name1)), ".\x00..\x20");
                 $file_name_array = explode('.', $file_name);
                 $name_thumb = $file_name_array[0] . "_thumb." . $file_name_array[1];
-                $name1 = strtotime(date('Y-m-d H:i')) . $name1;
-                // var_dump($name1);die();
+                $name1 = strtotime(date('Y-m-d H:i')) . $name;
                 if (move_uploaded_file($_FILES["image"]["tmp_name"][$f], TABLE_PROMOCODE_UPLOAD . $name1)) {
-
-                    $image_promo = $name_thumb;
+                    $promocode_image = $name_thumb;
                     $config['image_library'] = 'gd2';
                     $config['source_image'] = TABLE_PROMOCODE_UPLOAD . $name1;
                     $config['create_thumb'] = TRUE;
@@ -142,7 +164,9 @@ class promocode extends MX_Controller {
 
 
 
-        if ($_FILES['image']['type'][0] == "") {
+
+
+        if ($promocode_image == "") {
             $image_promo = "no_image.png";
         }
 
@@ -189,7 +213,7 @@ class promocode extends MX_Controller {
         $val['always_available'] = $postvar['always_available'];
 
         $val['offer_value'] = $postvar['offer_value'];
-        $val['promocode_image'] = $image_promo;
+        $val['promocode_image'] = $promocode_image;
         $val['min_cost'] = $postvar['min_cost'];
         $val['default_banner'] = $postvar['default_banner'];
         $val['multiple'] = $multiple;
@@ -410,25 +434,11 @@ class promocode extends MX_Controller {
             }
         }
 
-
-
-
-
-
-
-
         $this->model_promocode->update("promocodes", $val, "promocode_id=" . $id);
-
-        // echo "<pre>"; print_r($postvar['add_into_comman']);
-        // exit();
-
         if (isset($postvar['add_into_comman']) && $postvar['add_into_comman'] != "NO") {
             $this->db->query("DELETE FROM offers WHERE promocode_id=" . $id);
             $consumer_list = $this->db->query("SELECT * FROM users where bIsdelete = 0");
             $result = $consumer_list->result_array();
-
-            // var_dump($result);
-            // exit();
 
             for ($i = 0; $i < count($result); $i++) {
                 $val12['consumer_id'] = $result[$i]['user_id'];
@@ -466,23 +476,12 @@ class promocode extends MX_Controller {
                         }
                     }
                 }
-                //var_dump($ios_registatoin_ids);die();
                 $this->model_promocode->ios_push($postvar['promocode_description'], $postvar['promocode_description'], $name1, '1', $ios_registatoin_ids, $postvar['to']);
             }
         } else if ($postvar['to'] == NULL) {
             $this->db->query("DELETE FROM offers WHERE promocode_id=" . $id);
         }
-
-
-
-        // else
-        //  {
-        //    var_dump("expression");
-        //    exit();
-        //  }
-
         $this->session->set_flashdata('success', 'Promocode Updated successfully');
-
         redirect("promocode_list");
     }
 
