@@ -2,17 +2,17 @@
 
 <style type="text/css">
 
-.buttonbg{
+    .buttonbg{
 
-    width:100%;color:#ffffff;padding:5px;
+        width:100%;color:#ffffff;padding:5px;
 
-    border: 0;
+        border: 0;
 
-    margin: 0px !important;
+        margin: 0px !important;
 
-border-radius:5px;
+        border-radius:5px;
 
-}
+    }
 
 </style>
 
@@ -24,7 +24,7 @@ border-radius:5px;
 
 
 
-         <div class="col-md-6"><h2>Consumer List</h2></div>
+        <div class="col-md-6"><h2>Consumer List</h2></div>
 
         <div class="col-md-6">
 
@@ -46,27 +46,29 @@ border-radius:5px;
 
                 <thead>
 
-                  <tr>
+                    <tr>
 
-                    <th>User ID</th>
+                        <th>User ID</th>
 
-                    <th>Name</th>
+                        <th>Name</th>
 
-                    <th>Contact No</th>
+                        <th>Contact No</th>
 
-                    <th>Email</th>
+                        <th>Email</th>
 
-                    <th>Address</th>
+                        <th>User Type</th>
 
-                    <th>Join Date</th>
+                        <th>Address</th>
 
-                    <th>Status</th>
+                        <th>Join Date</th>
+
+                        <th>Status</th>
 
                     <!-- <th>Vollate</th> -->
 
-                   <th>Action</th>
+                        <th>Action</th>
 
-                </tr>
+                    </tr>
 
                 </thead>
 
@@ -76,81 +78,87 @@ border-radius:5px;
 
                         <tr class="">
 
-                         <td><?php echo $row['user_id']; ?></td>
+                            <td><?php echo $row['user_id']; ?></td>
 
-                        <td><?php echo $row['ufname']." ".$row['ulname']; ?></td>
+                            <td><?php echo $row['ufname'] . " " . $row['ulname']; ?></td>
 
-                        <td><?php   $rest = substr($row['ucontactno'],0,4);
-                                    $rest1 = substr($row['ucontactno'],4,2);
-                                    $rest2 = substr($row['ucontactno'],6,3);
-                                    $rest3 = substr($row['ucontactno'],9,4);
+                            <td><?php
+                                $rest = substr($row['ucontactno'], 0, 4);
+                                $rest1 = substr($row['ucontactno'], 4, 2);
+                                $rest2 = substr($row['ucontactno'], 6, 3);
+                                $rest3 = substr($row['ucontactno'], 9, 4);
+                                echo $rest . " " . $rest1 . " " . $rest2 . " " . $rest3;
+                                ?></td>
 
-                                    echo $rest." ".$rest1." ".$rest2." ".$rest3; ?></td>
+                            <td><?php echo $row['uemail']; ?></td>
+                            <td>
+                                <?php
+                                if ($row['vmod'] == 3) {
+                                    echo "Web";
+                                } else if ($row['vmod'] == 1) {
+                                    echo "Android";
+                                } else {
+                                    echo "iOS";
+                                }
+                                ?>
+                            </td>
 
-                        <td><?php echo $row['uemail']; ?></td>
+                            <?php echo $row['vmod'] == "1" ? "Android" : "iOS"; ?></td>
+                            <td><?php
+                                $id = $row['user_id'];
 
-                         <td><?php
+                                $address = $this->db->query("select * from addressbook where consumer_id = $id");
 
-                         $id = $row['user_id'];
-
-                         $address = $this->db->query("select * from addressbook where consumer_id = $id");
-
-                          $result_array = $address->result_array();
-
-
-
-                          if($result_array)
-
-                           {
-
-                            echo $result_array[0]['address_type']." ".$result_array[0]['address_line']."<br>".$result_array[0]['address_line']."<br>".$result_array[0]['area']." ".$result_array[0]['city'];
-
-                            }
-
-                            else{
-
-                                echo "No address Added till now";
-
-                                } ?></td>
-
-                        <td><?php echo date('D, j M Y g:i A',strtotime($row['timestamp'])); ?></td>
+                                $result_array = $address->result_array();
 
 
 
-                            <td><?php if($row['ustatus']==1){?>
+                                if ($result_array) {
 
-                                <span class="buttonbg" style="background: green">Active</span>
+                                    echo $result_array[0]['address_type'] . " " . $result_array[0]['address_line'] . "<br>" . $result_array[0]['address_line'] . "<br>" . $result_array[0]['area'] . " " . $result_array[0]['city'];
+                                } else {
+
+                                    echo "No address Added till now";
+                                }
+                                ?></td>
+
+                            <td><?php echo date('D, j M Y g:i A', strtotime($row['timestamp'])); ?></td>
+
+
+
+                            <td><?php if ($row['ustatus'] == 1) { ?>
+
+                                    <span class="buttonbg" style="background: green">Active</span>
 
                                 <?php } else { ?>
 
-                                <span class="buttonbg" style="background: red">Inactive</span>
+                                    <span class="buttonbg" style="background: red">Inactive</span>
 
-                                <?php }?></td>
+                                <?php } ?></td>
 
 
 
-                           <!--  <td><span class="tools pull-center"><a href="consumer_add_vollate.php?uid=<?php echo $row['user_id'];?>"  ><span><?php echo round($row['vollate'],2); ?> INR</span></a></span> </td> -->
+                                                                   <!--  <td><span class="tools pull-center"><a href="consumer_add_vollate.php?uid=<?php echo $row['user_id']; ?>"  ><span><?php echo round($row['vollate'], 2); ?> INR</span></a></span> </td> -->
 
                             <td>
 
-                            <a href="<?php echo $this->config->item("site_url")."consumer_edit?user_id=".urlencode($this->general->encryptData($row["user_id"])) ; ?>" title="Edit Consumer"><i class="fa fa-pencil"></i></a>
+                                <a href="<?php echo $this->config->item("site_url") . "consumer_edit?user_id=" . urlencode($this->general->encryptData($row["user_id"])); ?>" title="Edit Consumer"><i class="fa fa-pencil"></i></a>
 
 
 
-                             <a class="Delete" href="<?php echo $this->config->item("site_url")."delete_consumer?user_id=".urlencode($this->general->encryptData($row["user_id"])) ; ?>" style="margin-left: 5px" title="Delete Consumer"><i class="fa fa-trash-o"></i></a>
+                                <a class="Delete" href="<?php echo $this->config->item("site_url") . "delete_consumer?user_id=" . urlencode($this->general->encryptData($row["user_id"])); ?>" style="margin-left: 5px" title="Delete Consumer"><i class="fa fa-trash-o"></i></a>
 
 
 
-                             <a href="<?php echo $this->config->item("site_url")."address_list?user_id=".urlencode($this->general->encryptData($row["user_id"])) ; ?>" style="margin-left: 5px" title="Address List"><i class="fa fa-eye"></i></a>
+                                <a href="<?php echo $this->config->item("site_url") . "address_list?user_id=" . urlencode($this->general->encryptData($row["user_id"])); ?>" style="margin-left: 5px" title="Address List"><i class="fa fa-eye"></i></a>
 
-                            <!-- <a class="view" href="<?php echo $this->config->item("site_url")."view_order?user_id=".urlencode($this->general->encryptData($value["user_id"])) ; ?>" style="margin-left: 5px"><i class="fa fa-eye"></i></a> -->
+                                                                    <!-- <a class="view" href="<?php echo $this->config->item("site_url") . "view_order?user_id=" . urlencode($this->general->encryptData($value["user_id"])); ?>" style="margin-left: 5px"><i class="fa fa-eye"></i></a> -->
 
                             </td>
 
                         </tr>
 
                     <?php }
-
                     ?>
 
 
@@ -171,11 +179,11 @@ border-radius:5px;
 
 <script>
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         $("#list").DataTable({
 
-            "order": [[ 0, "desc" ]]
+            "order": [[0, "desc"]]
 
         }
 
@@ -198,6 +206,5 @@ border-radius:5px;
 
 
 <?php
-
 include APPPATH . '/front-modules/views/footer.php';
 
