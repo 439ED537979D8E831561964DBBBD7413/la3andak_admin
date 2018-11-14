@@ -27,7 +27,7 @@
                             <a><i class="<?php echo $result[$i]['icon']; ?>"></i><font size="3"> <?php echo $result[$i]['menu_name'] ?> </font><span class="fa fa-chevron-down"></span></a>
                             <ul class="nav child_menu" style="display: none">
                                 <?php
-                                $new = $this->db->query("select * from menu where submenu_id='" . $result[$i]['menu_id'] . "' and status=1");
+                                $new = $this->db->query("select * from menu where submenu_id='" . $result[$i]['menu_id'] . "' and status=1 ORDER BY sortby");
                                 $result1 = $new->result_array();
                                 for ($j = 0; $j < count($result1); $j++) {
                                     ?>
