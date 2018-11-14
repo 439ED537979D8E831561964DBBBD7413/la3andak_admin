@@ -58,7 +58,7 @@
                             <td><?php echo $value['checkout_comment']; ?></td>
                             <td>
                                 <a href="#myModal" data-toggle="modal" style="background: #2a3f54;text-align:center;width: 100%;" class="btn btn-default get myModal" onClick="Load_Contents_From_DB_by_Vasplus_Blog('<?php echo $value['order_id']; ?>');"><font color="white">View</font></a>
-                                <a href="javascript:void(0);" style="background: #2a3f54;text-align:center;width:100%;" onClick="MarkAsDeliver('<?php echo strip_tags($value['order_id']); ?>');" class="btn btn-default get"><font color="white">Deliver</font></a>
+                                <a href="javascript:void(0);" style="background: #2a3f54;text-align:center;width:100%;" onClick="MarkAsEnRoute('<?php echo strip_tags($value['order_id']); ?>');" class="btn btn-default get"><font color="white">En route</font></a>
                                 <a href="invoice?order_code=<?php echo $value['order_code']; ?>" style="background: #2a3f54;text-align:center;width: 100%;" target="_blank" class="btn btn-default get"><font color="white">Print</font></a>
                             </td>
                         </tr>
@@ -107,20 +107,15 @@
     }
 
 
-    function MarkAsDeliver(id_to_delete)
+    function MarkAsEnRoute(id_to_delete)
     {
-        // alert(id_to_delete);
-        if (confirm("Are you sure you really want to move this order to delivered order list?"))
+        if (confirm("Are you sure you really want to move this order to En route order list?"))
         {
-
-
             if (id_to_delete != "")
             {
-                // var dataString = "&id=" + id_to_delete + "&Action=MarkAsDeliver";
-
                 $.ajax({
                     type: "POST",
-                    url: '<?php echo base_url(); ?>order/deleiver_order',
+                    url: '<?php echo base_url(); ?>order/enroute',
                     data: {'id_to_delete': id_to_delete},
                     cache: false,
                     success: function (data)
@@ -130,7 +125,7 @@
                             window.location.reload();
                         } else
                         {
-                            alert("Order is already cancel by user")
+                            alert("Unable to process order.")
                             window.location.reload();
 
                         }

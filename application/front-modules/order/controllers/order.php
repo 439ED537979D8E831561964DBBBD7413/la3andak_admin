@@ -82,6 +82,30 @@ class order extends MX_Controller {
         }
     }
 
+    public function UnderPreparation() {
+        $postvar = $this->input->post();
+        $id = $postvar['id_to_delete'];
+        $cond = "order_id = '$id'";
+        $order = $this->model_order->getData("order", $fields, $cond, $join);
+
+        $val['order_status'] = 3;
+        $val['delivered_date'] = date("Y-m-d H:i:s");            // =5
+        $this->model_order->update("order", $val, "order_id=" . $id);
+        echo "True";
+    }
+
+    public function enroute() {
+        $postvar = $this->input->post();
+        $id = $postvar['id_to_delete'];
+        $cond = "order_id = '$id'";
+        $order = $this->model_order->getData("order", $fields, $cond, $join);
+
+        $val['order_status'] = 6;
+        $val['delivered_date'] = date("Y-m-d H:i:s");            // =5
+        $this->model_order->update("order", $val, "order_id=" . $id);
+        echo "True";
+    }
+
     public function edit_order() {
         $postvar = $this->input->get();
         $order_code = $postvar['order_code'];
@@ -249,7 +273,7 @@ class order extends MX_Controller {
     }
 
     public function under_preparation_order() {
-        $order = $this->db->query("SELECT o.*,s.seller_shop_name,s.seller_contactno,u.ucontactno,u.ufname,u.ulname,u.ucity FROM `order` o LEFT JOIN seller s ON (s.seller_id=o.seller_id) LEFT JOIN users u ON (o.user_id=u.user_id) WHERE o.order_status=2 AND o.bRecordDelete=0 ORDER BY order_date DESC");
+        $order = $this->db->query("SELECT o.*,s.seller_shop_name,s.seller_contactno,u.ucontactno,u.ufname,u.ulname,u.ucity FROM `order` o LEFT JOIN seller s ON (s.seller_id=o.seller_id) LEFT JOIN users u ON (o.user_id=u.user_id) WHERE o.order_status=3 AND o.bRecordDelete=0 ORDER BY order_date DESC");
 
         $order_array = $order->result_array();
         $data['orders'] = $order_array;
@@ -258,7 +282,7 @@ class order extends MX_Controller {
     }
 
     public function en_route_order() {
-        $order = $this->db->query("SELECT o.*,s.seller_shop_name,s.seller_contactno,u.ucontactno,u.ufname,u.ulname,u.ucity FROM `order` o LEFT JOIN seller s ON (s.seller_id=o.seller_id) LEFT JOIN users u ON (o.user_id=u.user_id) WHERE o.order_status=2 AND o.bRecordDelete=0 ORDER BY order_date DESC");
+        $order = $this->db->query("SELECT o.*,s.seller_shop_name,s.seller_contactno,u.ucontactno,u.ufname,u.ulname,u.ucity FROM `order` o LEFT JOIN seller s ON (s.seller_id=o.seller_id) LEFT JOIN users u ON (o.user_id=u.user_id) WHERE o.order_status=6 AND o.bRecordDelete=0 ORDER BY order_date DESC");
 
         $order_array = $order->result_array();
         $data['orders'] = $order_array;
