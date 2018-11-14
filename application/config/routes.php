@@ -57,7 +57,7 @@ $route['profile'] = 'content/profile';
 $route['dashboard'] = 'content/dashboard';
 $route['content_management'] = 'content/content_management';
 $route['contact_us'] = 'content/contact_us';
-$route['deleivery_charges']='content/deleivery_charges';
+$route['deleivery_charges'] = 'content/deleivery_charges';
 $route['edit_profile_api'] = 'content/edit_profile_api';
 $route['feedback_list'] = 'content/feedback_list';
 
@@ -125,19 +125,21 @@ $route['payment_history'] = 'payment/payment_history';
 
 //Sloats
 
-$route['edit_slots']='sloats/edit_slots';
-$route['edit_slots_detail']='sloats/edit_slots_detail';
-$route['ChangeSlotStatus']='sloats/ChangeSlotStatus';
-$route['Slots_order_limit']='sloats/Slots_order_limit';
+$route['edit_slots'] = 'sloats/edit_slots';
+$route['edit_slots_detail'] = 'sloats/edit_slots_detail';
+$route['ChangeSlotStatus'] = 'sloats/ChangeSlotStatus';
+$route['Slots_order_limit'] = 'sloats/Slots_order_limit';
 
 
 //order
 $route['invoice'] = 'order/invoice';
 $route['neworderlist'] = 'order/neworderlist';
 $route['order_pending_list'] = 'order/order_pending_list';
+$route['under_preparation_order'] = 'order/under_preparation_order';
+$route['en_route_order_list'] = 'order/en_route_order';
 $route['order_cancel_list'] = 'order/order_cancel_list';
 $route['order_delivered_list'] = 'order/order_delivered_list';
-$route['order/oreder_detail']='order/oreder_detail';
+$route['order/oreder_detail'] = 'order/oreder_detail';
 $route['edit_order'] = 'order/edit_order';
 
 //notification
