@@ -275,7 +275,7 @@
                 //sets dt2 maxDate to the last day of 30 days window
                 dt2.datepicker('option', 'maxDate', startDate);
                 dt2.datepicker('option', 'minDate', minDate);
-                $(this).datepicker('option', 'minDate', minDate);
+                //$(this).datepicker('option', 'minDate', minDate);
             }
         }).on('change', function () {
             $(this).valid();
