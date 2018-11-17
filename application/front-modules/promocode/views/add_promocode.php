@@ -125,7 +125,7 @@
                 startDate.setDate(startDate.getDate() + 30);
                 dt2.datepicker('option', 'maxDate', startDate);
                 dt2.datepicker('option', 'minDate', minDate);
-                $(this).datepicker('option', 'minDate', minDate);
+                //$(this).datepicker('option', 'minDate', minDate);
             }
         }).on('change', function () {
             $(this).valid();
