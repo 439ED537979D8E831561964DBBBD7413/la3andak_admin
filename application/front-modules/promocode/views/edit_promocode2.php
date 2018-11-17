@@ -9,15 +9,32 @@
 
 <script type="text/javascript">
     $(function () {
-        $("#events_date").datepicker();
-        $("#events_date1").datepicker();
+        $("#events_date").datepicker({
+            dateFormat: 'dd-mm-yy',
+            changeMonth: true,
+            changeYear: true,
+            minDate: 0,
+            onSelect: function (date) {
+                var dt2 = $('#events_date1');
+                var startDate = $(this).datepicker('getDate');
+                var minDate = $(this).datepicker('getDate');
+                dt2.datepicker('setDate', minDate);
+                startDate.setDate(startDate.getDate() + 30);
+                dt2.datepicker('option', 'maxDate', startDate);
+                dt2.datepicker('option', 'minDate', minDate);
+                //$(this).datepicker('option', 'minDate', minDate);
+            }
+        });
 
-        $.datepicker.setDefaults({
+        $("#events_date1").datepicker({
             dateFormat: 'dd-mm-yy',
             changeMonth: true,
             changeYear: true,
             minDate: 0,
         });
+
+
+
     });
 </script>
 <style type="text/css">
