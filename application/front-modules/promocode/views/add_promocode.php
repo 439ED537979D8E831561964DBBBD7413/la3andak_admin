@@ -112,19 +112,39 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
     $(function () {
-        $("#events_date").datepicker();
-        $("#datepicker1").datepicker();
+        $("#events_date").datepicker({
+            dateFormat: 'dd-mm-yy',
+            changeMonth: true,
+            changeYear: true,
+            minDate: 0,
+            onSelect: function (date) {
+                var dt2 = $('#datepicker1');
+                var startDate = $(this).datepicker('getDate');
+                var minDate = $(this).datepicker('getDate');
+                dt2.datepicker('setDate', minDate);
+                startDate.setDate(startDate.getDate() + 30);
+                dt2.datepicker('option', 'maxDate', startDate);
+                dt2.datepicker('option', 'minDate', minDate);
+                $(this).datepicker('option', 'minDate', minDate);
+            }
+        }).on('change', function () {
+            $(this).valid();
+        });
+
+        $("#datepicker1").datepicker({
+            dateFormat: 'dd-mm-yy',
+            changeMonth: true,
+            changeYear: true,
+            minDate: 0,
+        });
+
+
         $("#always_available").change(function () {
             $("#events_date").val('');
             $("#events_date1").val('');
         });
     });
-    $.datepicker.setDefaults({
-        dateFormat: 'dd-mm-yy',
-        changeMonth: true,
-        changeYear: true,
-        minDate: 0,
-    });
+
 </script>
 
 <div class="row">
