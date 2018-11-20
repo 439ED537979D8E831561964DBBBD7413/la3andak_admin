@@ -1,4 +1,3 @@
-
 <html dir="ltr" lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -50,9 +49,7 @@
     <body>
         <?php
         if (isset($_GET['order_code']) && !empty($_GET['order_code'])) {
-            // $cDB = new cDatabase();
             $query = $this->db->query("SELECT o.*,s.seller_english_name,s.seller_address,s.seller_contactno,u.ucontactno,u.ufname,u.ulname,u.uemail,u.ucity FROM `order` o LEFT JOIN seller s ON (s.seller_id=o.seller_id) LEFT JOIN users u ON (o.user_id=u.user_id)  WHERE o.order_code='" . $_GET['order_code'] . "'");
-            // $row = mysql_fetch_assoc($query);
             $row = $query->result_array();
             ?>
             <div style="width: 80%;margin-left: 10%;">
@@ -60,7 +57,8 @@
                     <div style="background: black;height: 66px;">
                         <?php $image_url = $this->config->item("upload_url"); ?>
                         <a href="javascript:void(0)" class="site_title">
-                            <img src="<?php echo $image_url; ?>/images/logo_main.png" height="44px;" width="105px" style="margin-left:42%;margin-top:2%;"></a>
+                            <img src="<?php echo $image_url; ?>/images/logo_main.png" height="44px;" width="105px" style="margin-left:42%;margin-top:1%;">
+                        </a>
                     </div>
                     <div class="container">
                         <div style="page-break-after: always;" class="marrgin-top">
@@ -105,10 +103,7 @@
                                 $row1 = $query1->result_array();
                                 $sql = $this->db->query('SELECT Sum(oh.product_quantity) as product_quantity, Sum(oh.product_price) as product_price, Sum(product_quantity*product_price) as product_total_price FROM order_history oh WHERE oh.order_code = "' . $_GET['order_code'] . '"');
                                 $tmp = $sql->result_array();
-                                // $product_total_price = mysql_fetch_assoc($tmp);
-                                /* var_dump($product_total_price['product_total_price']);
-                                  echo $sql; */
-                                $count = count($query);
+                                $count = count($row);
                                 if ($count > 0) {
                                     ?>
                                     <table class="table-condensed"  width="100%;" border="1" style="outline: thin solid black;">
@@ -125,9 +120,6 @@
                                             <?php
                                             if ($query1) {
                                                 $counter = 0;
-                                                // echo "<pre>";
-                                                // var_dump($row1[0]['discount']);
-                                                // exit();
                                                 for ($i = 0; $i < count($row1); $i++) {
                                                     $counter++;
                                                     ?>
@@ -136,7 +128,6 @@
                                                         <td><?php echo $row1[$i]['product_english_name'] . ' - ' . $row1[$i]['seller_price_type']; ?></td>
                                                         <td><?php echo $row1[$i]['product_price'] ?></td>
                                                         <td><?php echo $row1[$i]['product_quantity']; ?> </td>
-                                                        <!-- <td class="text-right"><?php echo round($content['product_quantity'] * $content['product_price'], 2); ?></td> -->
                                                         <td><?php echo round($row1[$i]['product_total_price'], 2); ?></td>
                                                     </tr>
                                                     <?php
@@ -147,11 +138,13 @@
                                                     <td class="text-center" style="text-align: center;"><b><?php echo round($tmp[0]['product_total_price'], 2); ?></td>
                                                 </tr>
                                                 <tr>
-                                        <!--  <td class="text-right" colspan="9"><b>eVoucher <i><?php echo $row['promocode']; ?></i> redemntion</b></td> -->
                                                     <td  colspan="4" style="text-align: right;padding-right: 15px;"><b> Coupon Code & Discount: <?php echo $row[0]['promocode']; ?></b></td>
-                                                    <td class="text-center" style="text-align: center;"><b><?php echo "- " . round($row[0]['discount'], 2); ?></td>
+                                                    <?php if (isset($row[0]['discount']) && $row[0]['discount'] > 0): ?>
+                                                        <td class="text-center" style="text-align: center;"><b><?php echo "- " . round($row[0]['discount'], 2); ?></b></td>
+                                                    <?php else: ?>
+                                                        <td class="text-center" style="text-align: center;"><b>0</td>
+                                                    <?php endif; ?>
                                                 </tr>
-                                                <tr>
                                                 <tr>
                                                     <td  colspan="4"  style="text-align: right;padding-right: 15px;"><b>Flat Shipping Rate</b></td>
                                                     <td class="text-center" style="text-align: center;"><b><?php echo round($row[0]['delivery_charge'], 2); ?></td>
@@ -160,12 +153,7 @@
                                                     <td  colspan="4" style="text-align: right;padding-right: 15px;"><b><font color="white">Total</font></b></td>
                                                     <td class="text-center" style="text-align: center;"><font color="white"><b><?php echo CURRENCY_CONSTANT . "  " . round($row[0]['grant_total'], 2); ?></font></td>
                                                 </tr>
-                                                        <!-- <tr>
-                      <td class="text-right" colspan="10"style="text-align: -webkit-left;"><b>Vat No.</b>27191150215V   <b>CST No.</b>27191150215C</td>
-                                                  </tr> -->
-                                                                <!-- <tr>
-                                                  <td class="text-right" colspan="10" style="text-align: -webkit-left;">I/We hereby certify that my/our registration certificate under the Maharashtra Value Added Tax Act. 2002 is in force on the date on which the sale of  the goods specified in this " Tax Invoice"  is made by me/us and that the transaction of sales covered by this "Tax Invoice has been effected by me/us and it shall be accounted  for in  the turn over of sales while filing return and due tax, if any payable on the sales has been paid shall be paid.</td>
-                                                                </tr> -->
+
                                                 <?php
                                             }
                                             ?>

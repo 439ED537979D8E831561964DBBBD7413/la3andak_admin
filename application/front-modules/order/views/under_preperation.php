@@ -7,13 +7,11 @@
         border-radius:5px;
     }
 </style>
-
 <div class="col-md-12 col-sm-12 col-xs-12">
     <div class="value">
         <div class="col-md-12">
-            <h2>Pending Order List</h2>
+            <h2>Under Preparation Order List</h2>
         </div>
-
     </div>
     <div class="x_panel">
         <div class="x_content">
@@ -25,22 +23,17 @@
                         <th>Customer Name</th>
                         <th>Customer Contact</th>
                         <th>Customer Address</th>
-                        <!-- <th>Shop Name</th> -->
-
                         <th>Order Price (in <?php echo CURRENCY_CONSTANT; ?>)</th>
                         <th>Requested on Date</th>
                         <th>Time Slots</th>
                         <th>Comments</th>
                         <th>Action</th>
-                        <!-- <th>Edit</th>                                  -->
                     </tr>
                 </thead>
                 <tbody>
                     <?php
                     foreach ($orders as $key => $value) {
                         ?>
-
-
                         <tr class="">
                             <td><?php echo $value['order_id']; ?></td>
                             <td><?php echo $value['order_code']; ?></td>
@@ -50,15 +43,11 @@
                                 $rest1 = substr($value['ucontactno'], 4, 2);
                                 $rest2 = substr($value['ucontactno'], 6, 3);
                                 $rest3 = substr($value['ucontactno'], 9, 4);
-
                                 echo $rest . " " . $rest1 . " " . $rest2 . " " . $rest3;
                                 ?></td>
                             <td><?php echo $value['shipping_address']; ?></td>
-                            <!-- <td><?php echo $value['seller_shop_name']; ?></td> -->
-
                             <td><?php echo $value['grant_total']; ?></td>
                             <td> <?php echo date('D, j M Y g:i A', strtotime($value['order_date'])); ?></td>
-
                             <td> <?php
                                 if ($value['delivery_time_slot'] == 'Instant Delivery') {
                                     echo $value['delivery_time_slot'];
@@ -69,21 +58,14 @@
                             <td><?php echo $value['checkout_comment']; ?></td>
                             <td>
                                 <a href="#myModal" data-toggle="modal" style="background: #2a3f54;text-align:center;width: 100%;" class="btn btn-default get myModal" onClick="Load_Contents_From_DB_by_Vasplus_Blog('<?php echo $value['order_id']; ?>');"><font color="white">View</font></a>
-
-                                <a href="javascript:void(0);" style="background: #2a3f54;text-align:center;width:100%;" onClick="MarkAsUnderPreparation('<?php echo strip_tags($value['order_id']); ?>');" class="btn btn-default get"><font color="white">Under Preparation</font></a>
-
+                                <a href="javascript:void(0);" style="background: #2a3f54;text-align:center;width:100%;" onClick="MarkAsEnRoute('<?php echo strip_tags($value['order_id']); ?>');" class="btn btn-default get"><font color="white">En route</font></a>
                                 <a href="invoice?order_code=<?php echo $value['order_code']; ?>" style="background: #2a3f54;text-align:center;width: 100%;" target="_blank" class="btn btn-default get"><font color="white">Print</font></a>
                             </td>
                         </tr>
                     <?php }
                     ?>
-
                 </tbody>
             </table>
-
-
-            <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade"></div>
-
         </div>
     </div>
 </div>
@@ -94,10 +76,12 @@
             "order": [[0, "desc"]]
         }
         );
+
     });
 
     function Load_Contents_From_DB_by_Vasplus_Blog(order_id)
     {
+        //alert(order_id);
         if (order_id == "")
         {
             alert("The Order ID must not be empty please.");
@@ -123,50 +107,15 @@
     }
 
 
-    function MarkAsDeliver(id_to_delete)
+    function MarkAsEnRoute(id_to_delete)
     {
-        if (confirm("Are you sure you really want to move this order to delivered order list?"))
+        if (confirm("Are you sure you really want to move this order to En route order list?"))
         {
             if (id_to_delete != "")
             {
                 $.ajax({
                     type: "POST",
-                    url: '<?php echo base_url(); ?>order/deleiver_order',
-                    data: {'id_to_delete': id_to_delete},
-                    cache: false,
-                    success: function (data)
-                    {
-                        if (data == 'True')
-                        {
-                            window.location.reload();
-                        } else
-                        {
-                            alert("Order is already cancel by user")
-                            window.location.reload();
-
-                        }
-                    }
-                });
-            } else
-            {
-                alert("Sorry, we could not verify the identity of the post you have just clicked. Please try again or contact the site admin if this problem persist. Thanks...");
-            }
-        }
-        return false;
-    }
-
-    function MarkAsUnderPreparation(id_to_delete)
-    {
-        // alert(id_to_delete);
-        if (confirm("Are you sure you really want to move this order to Under Preparation order list?"))
-        {
-
-
-            if (id_to_delete != "")
-            {
-                $.ajax({
-                    type: "POST",
-                    url: '<?php echo base_url(); ?>order/UnderPreparation',
+                    url: '<?php echo base_url(); ?>order/enroute',
                     data: {'id_to_delete': id_to_delete},
                     cache: false,
                     success: function (data)
@@ -191,9 +140,5 @@
     }
 
 </script>
-
-
-
-
 <?php
 include APPPATH . '/front-modules/views/footer.php';

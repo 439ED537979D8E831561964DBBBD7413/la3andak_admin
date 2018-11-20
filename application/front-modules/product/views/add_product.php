@@ -244,15 +244,40 @@
 
 <script type="text/javascript">
                                         $(function () {
-                                            $("#offer_start_date").datepicker();
-                                            $("#offer_end_date").datepicker();
+                                            $("#offer_start_date").datepicker({
+                                                dateFormat: 'dd-mm-yy',
+                                                changeMonth: true,
+                                                changeYear: true,
+                                                minDate: 0,
+                                                onSelect: function (date) {
+                                                    var dt2 = $('#offer_end_date');
+                                                    var startDate = $(this).datepicker('getDate');
+                                                    var minDate = $(this).datepicker('getDate');
+                                                    dt2.datepicker('setDate', minDate);
+                                                    startDate.setDate(startDate.getDate() + 30);
+                                                    //sets dt2 maxDate to the last day of 30 days window
+                                                    dt2.datepicker('option', 'maxDate', startDate);
+                                                    dt2.datepicker('option', 'minDate', minDate);
+                                                    //$(this).datepicker('option', 'minDate', minDate);
+                                                }
+                                            }).on('change', function () {
+                                                $(this).valid();
+                                            });
+                                            $("#offer_end_date").datepicker({
+                                                dateFormat: 'dd-mm-yy',
+                                                changeMonth: true,
+                                                changeYear: true,
+                                                minDate: 0,
+                                            }).on('change', function () {
+                                                $(this).valid();
+                                            });
                                         });
-                                        $.datepicker.setDefaults({
-                                            dateFormat: 'dd-mm-yy',
-                                            changeMonth: true,
-                                            changeYear: true,
-                                            minDate: 0,
-                                        });
+//                                        $.datepicker.setDefaults({
+//                                            dateFormat: 'dd-mm-yy',
+//                                            changeMonth: true,
+//                                            changeYear: true,
+//                                            minDate: 0,
+//                                        });
                                         $(document).ready(function () {
 
                                             $('#form_add_item').submit(function () {

@@ -3132,10 +3132,13 @@ class V1 extends MX_Controller {
                     $order_info_tmp['status'] = 'Confirm';
                     array_push($order_info, $order_info_tmp);
                 } else if ($order_list_array[$i]['order_status'] == 2) {
-                    $order_info_tmp['status'] = 'On The Way';
+                    $order_info_tmp['status'] = 'Pending';
                     array_push($order_info, $order_info_tmp);
                 } else if ($order_list_array[$i]['order_status'] == 3) {
-                    $order_info_tmp['status'] = 'Inprocess';
+                    $order_info_tmp['status'] = 'Under Preparation';
+                    array_push($order_info, $order_info_tmp);
+                } else if ($order_list_array[$i]['order_status'] == 6) {
+                    $order_info_tmp['status'] = 'En route';
                     array_push($order_info, $order_info_tmp);
                 } else if ($order_list_array[$i]['order_status'] == 4) {
                     $order_info_tmp['status'] = 'Canceled';

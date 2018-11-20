@@ -47,6 +47,7 @@ class promocode extends MX_Controller {
 
     public function promocode_action() {
         $postvar = $this->input->post();
+        
         if ($postvar['main_type'] == 'Category') {
             $string = implode(',', $postvar['category_main']);
             if ($string == NULL) {
@@ -177,17 +178,12 @@ class promocode extends MX_Controller {
 
         if (!isset($postvar['always_available'])) {
             $postvar['always_available'] = 'NO';
-            $postvar['date'] = date('Y-m-d', strtotime($postvar['date']));
-            $postvar['date1'] = date('Y-m-d', strtotime($postvar['date1']));
+            $val['promocode_start_date'] = date('Y-m-d', strtotime($postvar['events_date']));
+            $val['promocode_end_date'] = date('Y-m-d', strtotime($postvar['events_date1']));
+        } elseif (!empty($postvar['events_date']) && !empty($postvar['events_date1']) && !isset($postvar['always_available'])) {
 
-            $val['promocode_start_date'] = date('Y-m-d', strtotime($postvar['date']));
-            $val['promocode_end_date'] = date('Y-m-d', strtotime($postvar['date1']));
-        } elseif (!empty($postvar['date']) && !empty($postvar['date1']) && !isset($postvar['always_available'])) {
-            $postvar['date'] = date('Y-m-d', strtotime($postvar['date']));
-            $postvar['date1'] = date('Y-m-d', strtotime($postvar['date1']));
-
-            $val['promocode_start_date'] = date('Y-m-d', strtotime($postvar['date']));
-            $val['promocode_end_date'] = date('Y-m-d', strtotime($postvar['date1']));
+            $val['promocode_start_date'] = date('Y-m-d', strtotime($postvar['events_date']));
+            $val['promocode_end_date'] = date('Y-m-d', strtotime($postvar['events_date1']));
         } else {
             $val['promocode_start_date'] = "0000-00-00";
             $val['promocode_end_date'] = "0000-00-00";
