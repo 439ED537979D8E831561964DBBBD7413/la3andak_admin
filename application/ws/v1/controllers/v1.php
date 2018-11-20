@@ -3083,6 +3083,7 @@ class V1 extends MX_Controller {
                 $order_info_tmp['billing_address'] = '';
                 $order_info_tmp['total_price'] = $order_list_array[$i]['total_price'];
                 $order_info_tmp['grant_total'] = $order_list_array[$i]['grant_total'];
+                $order_info_tmp['delivery_charge'] = $order_list_array[$i]['delivery_charge'];
                 $order_info_tmp['paid'] = $order_list_array[$i]['paid'];
                 $order_info_tmp['seller_logo'] = $image_url . "admin_profile/" . $order_list_array[$i]['seller_logo'];
                 $order_info_tmp['payment_mode'] = $order_list_array[$i]['payment_mode'];
