@@ -80,6 +80,8 @@
                                             echo "MobiKwik";
                                         } elseif ($row[0]['payment_mode'] == 4) {
                                             echo "Paytm";
+                                        }elseif ($row[0]['payment_mode'] == 5) {
+                                            echo "POS";
                                         }
                                         ?>
                                     </div><br><br><br><br><br>
