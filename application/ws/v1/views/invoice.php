@@ -86,7 +86,7 @@
 				    	<div style="float: right;text-align: right;">
 				    	<b>Order Date:</b><br><?php echo date('l jS \of F Y  ',strtotime($row[0]['order_date']));?><br>
 				    	
-				    	<b>Payment Mode:</b><br><?php if($row[0]['payment_mode']==1){echo "Cash On Delivery";}elseif($row[0]['payment_mode']==2){echo "PayUMoney";}elseif($row[0]['payment_mode']==3){echo "MobiKwik";}elseif($row[0]['payment_mode']==4){echo "Paytm";}?>
+				    	<b>Payment Mode:</b><br><?php if($row[0]['payment_mode']==1){echo "Cash On Delivery";}elseif($row[0]['payment_mode']==5){echo "POS";}elseif($row[0]['payment_mode']==2){echo "PayUMoney";}elseif($row[0]['payment_mode']==3){echo "MobiKwik";}elseif($row[0]['payment_mode']==4){echo "Paytm";}?>
 				    	</div><br><br><br><br><br>
 
 				    	<div style="float: left;margin-top:-9%;">
