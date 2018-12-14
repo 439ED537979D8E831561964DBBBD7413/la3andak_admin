@@ -99,21 +99,21 @@
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Select Offers Type<span class="required">*</span>
                             </label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                <?php if ($promocode[0]['offers_type'] == 'FLAT') {
-                                    ?>
-                                    <select class="form-control" name="offers_type">                                
-                                        <option value="FLAT" selected="">FLAT</option>
-                                        <option value="PERCENTAGE">PERCENTAGE</option>                
-                                    </select>
-                                <?php } ?>
 
-                                <?php if ($promocode[0]['offers_type'] == 'PERCENTAGE') {
-                                    ?>
-                                    <select class="form-control" name="offers_type">                                
-                                        <option value="PERCENTAGE">PERCENTAGE</option>
-                                        <option value="FLAT" selected="">FLAT</option>                
-                                    </select>
-                                <?php } ?>
+                                <select class="form-control" name="offers_type">                                
+                                    <option value="FLAT" <?php echo $promocode[0]['offers_type'] == 'FLAT' ? "selected" : ""; ?>>FLAT</option>
+                                    <option value="PERCENTAGE" <?php echo $promocode[0]['offers_type'] == 'PERCENTAGE' ? "selected" : ""; ?>>PERCENTAGE</option>                
+                                </select>
+
+
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Offer Value<span class="required">*</span>
+                            </label>
+                            <div class="col-md-9 col-sm-9 col-xs-12 custom-select">
+                                <input id="offer_value" name="offer_value" class="required form-control col-md-7 col-xs-12" placeholder="Offer Value" type="text" value="<?php echo ($promocode[0]['offer_value'] != '') ? $promocode[0]['offer_value'] : ''; ?>" required>
                             </div>
                         </div>
 
@@ -129,35 +129,6 @@
                                 ?>
                             </div>
                         </div>
-
-                        <div class="form-group" id="always_available_div" >
-                            <label for="default_banner" class="control-label col-md-3 col-sm-3 col-xs-12">Add to Banner</label>
-                            <div class="col-md-9 col-sm-9 col-xs-12 custom-select">
-                                <?php
-                                if ($promocode[0]['default_banner'] == 1) {
-                                    echo '<input type="checkbox" checked id="default_banner" name="default_banner" value="1" />  Add to Banner ';
-                                } else {
-                                    echo '<input type="checkbox" id="default_banner" name="default_banner" value="1" />  Add to Banner ';
-                                }
-                                ?>
-
-                            </div>
-                        </div>
-
-                        <div class="form-group" id="always_available_div" >
-                            <label for="multiple" class="control-label col-md-3 col-sm-3 col-xs-12">Add to Multiple time use</label>
-                            <div class="col-md-9 col-sm-9 col-xs-12 custom-select">
-                                <?php
-                                if ($promocode[0]['multiple'] == 1) {
-                                    echo '<input type="checkbox" checked id="multiple" name="multiple" value="1" /> Add to Multiple time use  ';
-                                } else {
-                                    echo '<input type="checkbox" id="multiple" name="multiple" value="1" /> Add to Multiple time use ';
-                                }
-                                ?>
-
-                            </div>
-                        </div>
-
 
                         <div class="form-group" id="date_picker" >
                             <label class="control-label col-md-2 col-sm-2 col-xs-12" style="padding-left:10px;">Date Range<span class="required">
@@ -178,13 +149,7 @@
                         </div>
 
 
-                        <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Offer Value<span class="required">*</span>
-                            </label>
-                            <div class="col-md-9 col-sm-9 col-xs-12 custom-select">
-                                <input id="offer_value" name="offer_value" class="required form-control col-md-7 col-xs-12" placeholder="Offer Value" type="text" value="<?php echo ($promocode[0]['offer_value'] != '') ? $promocode[0]['offer_value'] : ''; ?>" required>
-                            </div>
-                        </div>
+
 
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Offer Image<span class="">*</span>
@@ -441,7 +406,6 @@
             leftSelected: '#multi_d_leftSelected, #multi_d_leftSelected_2',
             rightAll: '#multi_d_rightAll, #multi_d_rightAll_2',
             leftAll: '#multi_d_leftAll, #multi_d_leftAll_2',
-
             moveToRight: function (Multiselect, options, event, silent, skipStack) {
                 var button = $(event.currentTarget).attr('id');
 
@@ -475,7 +439,6 @@
                     }
                 }
             },
-
             moveToLeft: function (Multiselect, options, event, silent, skipStack) {
                 var button = $(event.currentTarget).attr('id');
 
