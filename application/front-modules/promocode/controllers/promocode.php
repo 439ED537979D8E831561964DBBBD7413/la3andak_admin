@@ -41,12 +41,19 @@ class promocode extends MX_Controller {
                 "jointype" => "inner"),
             array("table" => "product_bunch",
                 "condition" => "product_bunch.product_bunch_id=product.product_bunch",
+                "jointype" => "inner"),
+            array("table" => "brand",
+                "condition" => "brand.brand_id=product.product_brand_id",
                 "jointype" => "inner")
         );
 
         $fields2 = "product.*";
-        $cond2 = "product.bIsdelete = 0 and product.product_status = 1";
+        $cond2 = "product.bIsdelete=0 and product.product_status =1 AND brand.brand_status=1 AND brand.bIsdelete=0 AND category.category_status=1 AND category.bIsdelete=0 AND product_bunch.product_status=1 AND product_bunch.bIsdelete=0";
         $product = $this->model_promocode->getData("product", $fields2, $cond2, $join_ary);
+
+        
+
+
 
         $data['category'] = $category;
         $data['sub_category'] = $sub_category;
