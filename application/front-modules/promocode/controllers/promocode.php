@@ -34,9 +34,19 @@ class promocode extends MX_Controller {
         $cond1 = "bIsdelete = 0 and product_status = 1";
         $sub_category = $this->model_promocode->getData("product_bunch", $fields1, $cond1);
 
-        $fields2 = "*";
-        $cond2 = "bIsdelete = 0 and product_status = 1";
-        $product = $this->model_promocode->getData("product", $fields2, $cond2);
+
+        $join_ary = array(
+            array("table" => "category",
+                "condition" => "category.category_id=product.product_category",
+                "jointype" => "inner"),
+            array("table" => "product_bunch",
+                "condition" => "product_bunch.product_bunch_id=product.product_bunch",
+                "jointype" => "inner")
+        );
+
+        $fields2 = "product.*";
+        $cond2 = "product.bIsdelete = 0 and product.product_status = 1";
+        $product = $this->model_promocode->getData("product", $fields2, $cond2, $join_ary);
 
         $data['category'] = $category;
         $data['sub_category'] = $sub_category;
@@ -47,7 +57,7 @@ class promocode extends MX_Controller {
 
     public function promocode_action() {
         $postvar = $this->input->post();
-        
+
         if ($postvar['main_type'] == 'Category') {
             $string = implode(',', $postvar['category_main']);
             if ($string == NULL) {
